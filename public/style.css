@@ -1,0 +1,129 @@
+/* Basic styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightblue; /* Slightly off-white background for a clean look */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the body takes full height of the viewport */
+    flex-direction: column; /* Stack content vertically */
+}
+
+header {
+    background-color: #e74c3c; /* Bold red header */
+    color: white;
+    text-align: center;
+    padding: 30px 15px; /* Increased padding for a more spacious feel */
+    border-bottom: 4px solid #c0392b; /* Underline to give it more structure */
+    width: 100%; /* Make sure it takes the full width */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Larger font size for header */
+    letter-spacing: 2px;
+}
+
+#menu {
+    padding: 40px 20px;
+    width: 80%; /* Limit width */
+    max-width: 1200px; /* Set a max-width to avoid stretching too wide */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center menu items */
+    gap: 20px; /* Space between menu items */
+}
+
+#menu h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #e74c3c; /* Matching red color for the menu title */
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%; /* Ensure the title stretches across the full width */
+}
+
+/* Menu Item */
+.menu-item {
+    display: flex;
+    flex-direction: column; /* Stack image and details vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px; /* Fixed width for each menu item */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Larger shadow for depth */
+    transition: all 0.3s ease-in-out;
+    text-align: center; /* Center the text */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Hover effect to slightly enlarge the item */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.menu-item img {
+    width: 180px; /* Slightly bigger image size for better visibility */
+    height: 180px; /* Set height to maintain a square shape */
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #e74c3c; /* Border around the image */
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+.menu-item img:hover {
+    transform: scale(1.1); /* Image zoom effect on hover */
+}
+
+.menu-item-details h3 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1em;
+    color: #777;
+    margin: 10px 0;
+    line-height: 1.6; /* More line spacing for readability */
+}
+
+.price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #27ae60; /* Green for prices to indicate freshness and value */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 100%; /* Full width on mobile */
+        padding: 15px;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* Add more space on mobile */
+    }
+
+    .price {
+        font-size: 1.6em;
+    }
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2em;
+}
