@@ -10,10 +10,12 @@ body {
     align-items: center; /* Center content vertically */
     min-height: 100vh; /* Ensure the body takes full height of the viewport */
     flex-direction: column; /* Stack content vertically */
+    user-select: none; /* Disables text selection */
+
 }
 
 header {
-    background-color: #e74c3c; /* Bold red header */
+    background-color: lightcoral; /* Bold red header */
     color: white;
     text-align: center;
     padding: 30px 15px; /* Increased padding for a more spacious feel */
@@ -126,4 +128,124 @@ footer {
     background-color: #333;
     color: white;
     font-size: 1.2em;
+}
+
+
+/* Class to resize icons */
+.icon-small {
+    width: 16px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align with the text */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+
+/* Style for the Contact Section */
+#contact {
+    margin: 40px auto; /* Margin around the entire section */
+    padding: 20px; /* Padding inside the section */
+    max-width: 600px; /* Set a maximum width for better alignment */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the section */
+}
+
+/* Style for each paragraph in the Contact Section */
+#contact p {
+    margin-bottom: 15px; /* Margin below each paragraph */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+/* Style for the Contact Links */
+#contact a {
+    color: #007BFF; /* Blue color for the links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the links bold */
+}
+
+#contact a:hover {
+    text-decoration: underline; /* Underline the links on hover */
+}
+
+/* Style for small icons */
+.icon-small {
+    width: 18px; /* Adjust width to make icons smaller */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align icon with text */
+    margin-right: 8px; /* Space between the icon and the text */
+}
+
+/* Optional: Style for the heading */
+#contact h2 {
+    font-size: 1.8em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Margin below the heading */
+    text-align: center; /* Center-align the heading */
+}
+
+/* Styling for the Photo Collage Section */
+#photo-collage {
+    text-align: center; /* Center the text */
+    margin-bottom: 40px; /* Space below the section */
+}
+
+#photo-collage h3 {
+    font-size: 2em; /* Bigger title font size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark color for title */
+}
+
+/* Grid layout for the collage */
+.collage-container {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between images */
+    max-width: 1000px; /* Maximum width for the gallery */
+    margin: 0 auto; /* Centers the gallery horizontally */
+}
+
+/* Styling for collage images */
+.collage-item {
+    width: 100%; /* Makes the image responsive */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image fully covers the space without distortion */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for 3D effect */
+}
+
+
+/* Hover effect for the images */
+.collage-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .collage-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .collage-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+}
+
+#qr-code {
+    text-align: center; /* Centers the QR code section */
+    margin-top: 40px; /* Adds space above */
+}
+
+#qr-code img {
+    width: 200px; /* Controls the size of the QR code */
+    height: auto; /* Keeps the aspect ratio of the QR code */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+}
+
+#qr-code p {
+    margin-top: 15px; /* Adds space between QR code and text */
+    font-size: 1.1em; /* Makes the text a little larger */
+    color: #555; /* Darker text color */
 }
