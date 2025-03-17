@@ -32,7 +32,6 @@
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
 gtag('config', 'G-M3TYHSN0XQ');
 </script>
 
@@ -195,6 +194,7 @@ gtag('config', 'G-M3TYHSN0XQ');
         <h3>Scan to Visit Our Website</h3>
         <img src="images/QRcode.png" alt="QR Code to visit the website" style="width: 200px; height: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
         <p>Scan this QR code with your mobile device to quickly visit our website!</p>
+        
     </section>
     
     
@@ -202,16 +202,27 @@ gtag('config', 'G-M3TYHSN0XQ');
         <p>&copy; 2025 Siomai Cart Sarap. All rights reserved.</p>
     </footer>
 
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js').then((registration) => {
-                console.log('Service Worker registered with scope:', registration.scope);
-            }).catch((error) => {
-                console.log('Service Worker registration failed:', error);
-            });
-            });
-        }
-    </script>
+</footer>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner">
+    <p>We use cookies to improve your experience on our website. By continuing to use this website, you agree to our use of cookies. 
+    <a href="privacy-policy.html" target="_blank">Learn more</a>.</p>
+</div>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+            console.log('Service Worker registered with scope:', registration.scope);
+        }).catch((error) => {
+            console.log('Service Worker registration failed:', error);
+        });
+        });
+    }
+</script>
+</body>
+
+
+
 </body>
 </html>

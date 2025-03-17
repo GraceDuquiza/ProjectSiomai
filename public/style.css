@@ -124,10 +124,11 @@ header h1 {
 /* Footer styles */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #333;
     color: white;
-    font-size: 1.2em;
+    font-size: 14px;
+    margin-bottom: 50px;
 }
 
 
@@ -248,4 +249,40 @@ footer {
     margin-top: 15px; /* Adds space between QR code and text */
     font-size: 1.1em; /* Makes the text a little larger */
     color: #555; /* Darker text color */
+}
+/* Cookie Consent Banner Styles */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;  /* Place the banner at the bottom of the screen */
+    left: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    padding: 0 15px;  /* Padding on top and sides */
+    padding-bottom: 3px;  /* Smaller padding at the bottom */
+    text-align: center;
+    font-size: 12px;
+    z-index: 9999;
+    margin-top: 5px;  /* Remove extra margin */
+    box-sizing: border-box;  /* Ensures padding doesn't affect width */
+}
+
+/* Optional: Style the links within the banner */
+.cookie-banner a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.cookie-banner a:hover {
+    text-decoration: underline;
+}
+
+
+.cookie-banner a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.cookie-banner a:hover {
+    text-decoration: underline;
 }
