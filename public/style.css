@@ -170,7 +170,7 @@ footer {
 
 /* Style for small icons */
 .icon-small {
-    width: 18px; /* Adjust width to make icons smaller */
+    width: 20px; /* Adjust width to make icons smaller */
     height: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Align icon with text */
     margin-right: 8px; /* Space between the icon and the text */
