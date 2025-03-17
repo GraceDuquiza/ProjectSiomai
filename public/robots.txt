@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://siomaisarap2828.web.app/sitemap .xml
